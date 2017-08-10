@@ -48,11 +48,11 @@
     -->
 
     <q-tabs v-model="moduloSelezionato" color="green-6">
-      <q-tab slot="title" :name="modulo" :label="modulo" v-for="modulo in listaModuli" :key="modulo" @select="changeModulo"/>
+      <q-tab slot="title" :name="modulo" :label="modulo" v-for="modulo in listaModuli" :key="modulo"/>
     </q-tabs>
 
-    <div class="layout-padding">
-      <div class="column justify-center">
+    <div style="padding: 10px">
+      <div class="column">
         <q-card class="bg-light">
           <q-card-title class="bg-orange-7">
             <q-icon name="directions run" style="font-size: 1.5rem"></q-icon>
@@ -68,10 +68,12 @@
                   float-label="Portiere"
                   :options="listaPortieri"
                   :display-value="getDescSelect(formazione['por-1'])"
+                  filter-placeholder="Filtra per giocatore o squadra"
+                  @change="refreshTables()"
                 />
               </div>
             </div>
-            <div class="row justify-around">
+            <div class="row sm-gutter justify-around">
               <div v-for="difensore in schieramento.difensori" :class="difensore.class">
                 <q-select
                   filter
@@ -79,10 +81,12 @@
                   :float-label="difensore.label"
                   :options="listaDifensori"
                   :display-value="getDescSelect(formazione[difensore.model])"
+                  filter-placeholder="Filtra per giocatore o squadra"
+                  @change="refreshTables()"
                 />
               </div>
             </div>
-            <div class="row justify-around">
+            <div class="row sm-gutter justify-around">
               <div v-for="centrocampista in schieramento.centrocampisti" :class="centrocampista.class">
                 <q-select
                   filter
@@ -90,10 +94,12 @@
                   :float-label="centrocampista.label"
                   :options="listaCentrocampisti"
                   :display-value="getDescSelect(formazione[centrocampista.model])"
+                  filter-placeholder="Filtra per giocatore o squadra"
+                  @change="refreshTables()"
                 />
               </div>
             </div>
-            <div class="row justify-around">
+            <div class="row sm-gutter justify-around">
               <div v-for="attaccante in schieramento.attaccanti" :class="attaccante.class">
                 <q-select
                   filter
@@ -101,6 +107,8 @@
                   :float-label="attaccante.label"
                   :options="listaAttaccanti"
                   :display-value="getDescSelect(formazione[attaccante.model])"
+                  filter-placeholder="Filtra per giocatore o squadra"
+                  @change="refreshTables()"
                 />
               </div>
             </div>
@@ -123,14 +131,42 @@
                   float-label="Panchina"
                   :options="listaGiocatori"
                   :display-value="getDescSelect(panchina)"
+                  @change="refreshTables()"
+                  filter-placeholder="Filtra per giocatore o squadra"
                 />
+                <q-btn color="negative" icon="delete" @click="eliminaUltimaRiserva" :disabled="panchina.length === 0">Rimuovi Ultimo</q-btn>
               </div>
             </div>
           </q-card-main>
         </q-card>
-        <q-btn @click="checkFormazione" color="orange-6" class="pull-right" style="margin-top: 20px; margin-right: 5px; margin-left: 5px"> Controlla Formazione </q-btn>
       </div>
+      <q-btn @click="generaFormazione" color="orange-6" style="width: 100%"> Genera Formazione </q-btn>
+      <q-btn @click="confirmResetFormazione" color="red-6" style="width: 100%; margin-top: 10px"> Reset Formazione </q-btn>
     </div>
+    <q-modal ref="overviewModal" :content-css="{minWidth: '80vw', minHeight: '95vh'}">
+      <q-modal-layout>
+        <q-toolbar slot="header" color="orange-7">
+          <q-btn flat @click="$refs.overviewModal.close()">
+            <q-icon name="keyboard_arrow_left" />
+          </q-btn>
+          <div class="q-toolbar-title">
+            Fanta Guido Style
+          </div>
+        </q-toolbar>
+        <q-toolbar slot="footer" color="orange-7">
+        </q-toolbar>
+        <div style="margin: 10px">
+            <div class="row sm-gutter ">
+              <div class="column col-12 col-sm-6">
+                <q-input v-for="n in 11" inverted :float-label="n.toString()" :value="getDescGiocatore(formazioneCompleta[n - 1])" :color="n === 8 ? 'warning' : 'primary'"/>
+              </div>
+              <div class="column col-12 col-sm-6">
+                <q-input v-for="n in 9" inverted :float-label="(n + 11).toString()" :value="getDescGiocatore(formazioneCompleta[n + 10])" :color="n + 11 === 20 ? 'warning' : 'primary'"/>
+              </div>
+          </div>
+        </div>
+      </q-modal-layout>
+    </q-modal>
   </q-layout>
 </template>
 
@@ -160,7 +196,10 @@
     QCard,
     QCardMain,
     QCardTitle,
-    QCardSeparator
+    QCardSeparator,
+    QModal,
+    QModalLayout,
+    Dialog
   } from 'quasar'
 
   export default {
@@ -184,7 +223,9 @@
       QCard,
       QCardMain,
       QCardTitle,
-      QCardSeparator
+      QCardSeparator,
+      QModal,
+      QModalLayout
     },
     data () {
       return {
@@ -193,35 +234,53 @@
         panchina: [],
         formazioneCompleta: [],
         listaSquadre: [],
-        moduloSelezionato: '343',
+        moduloSelezionato: '',
         listaModuli: ['343', '352', '433', '442', '451', '532', '541'],
         schieramento: {
           difensori: [],
           centrocampisti: [],
           attaccanti: []
         },
-        listaPortieri: PORTIERI,
-        listaDifensori: DIFENSORI,
-        listaCentrocampisti: CENTROCAMPISTI,
-        listaAttaccanti: ATTACCANTI,
+        listaPortieri: [],
+        listaDifensori: [],
+        listaCentrocampisti: [],
+        listaAttaccanti: [],
         listaGiocatori: GIOCATORI
       }
     },
     computed: {
     },
+    watch: {
+      moduloSelezionato () {
+        this.changeModulo()
+      }
+    },
+    created () {
+      this.moduloSelezionato = '343'
+      this.listaPortieri = this._.filter(GIOCATORI, function (o) {
+        return o.ruolo === 'P'
+      })
+      this.listaDifensori = this._.filter(GIOCATORI, function (o) {
+        return o.ruolo === 'D'
+      })
+      this.listaCentrocampisti = this._.filter(GIOCATORI, function (o) {
+        return o.ruolo === 'C'
+      })
+      this.listaAttaccanti = this._.filter(GIOCATORI, function (o) {
+        return o.ruolo === 'A'
+      })
+    },
     methods: {
-      createList () {
-
-      },
       changeModulo () {
+        console.log('changeModulo')
         this.resetSchieramento()
+        this.resetFormazione()
 
         this.$set(this.formazione, 'por-1', undefined)
 
         var nDif = this.moduloSelezionato.charAt(0)
         var nCen = this.moduloSelezionato.charAt(1)
         var nAtt = this.moduloSelezionato.charAt(2)
-        console.log(this.moduloSelezionato, nDif, nCen, nAtt)
 
         // difensori
         for (var i = 0; i < nDif; i++) {
@@ -258,7 +317,8 @@
           this.$set(this.formazione, attaccante.model, undefined)
         }
       },
-      checkFormazione () {
+      generaFormazione () {
+        console.log('generaFormazione')
         this.titolari = []
         this.listaSquadre = []
         for (var key in this.formazione) {
@@ -287,12 +347,13 @@
 
         for (var i = 0; i < this.formazioneCompleta.length; i++) {
           var objGiocatore = this.findGiocatore(this.formazioneCompleta[i])
-          this.listaSquadre.push(objGiocatore.sublabel)
+          this.listaSquadre.push(objGiocatore.squadra)
           if (this.hasDuplicates(this.listaSquadre)) {
-            alert('Piu giocatori per la squadra ' + objGiocatore.sublabel + ' inseriti')
+            alert('Piu giocatori per la squadra ' + objGiocatore.squadra + ' inseriti')
             return
           }
         }
+        this.$refs.overviewModal.open()
       },
       hasDuplicates (a) {
         return this._.uniq(a).length !== a.length
@@ -300,25 +361,51 @@
       calcolaClass (n) {
         var diff = 12 / n
         diff = Math.floor(diff)
-        diff--
+        // diff--
         return 'col-' + diff
       },
       resetSchieramento () {
+        console.log('resetSchieramento')
         this.schieramento = {
           difensori: [],
           centrocampisti: [],
           attaccanti: []
         }
+      },
+      resetFormazione () {
         this.panchina = []
+        this.formazione = {}
+        this.refreshTables()
+      },
+      confirmResetFormazione () {
+        var self = this
+        Dialog.create({
+          title: 'Conferma',
+          message: 'Attenzione perderai tutte le modifiche fatte, continuare?',
+          buttons: [
+            {
+              label: 'No',
+              handler () {
+                // console.log('Disagreed...')
+              }
+            },
+            {
+              label: 'Si',
+              handler () {
+                self.resetFormazione()
+              }
+            }
+          ]
+        })
       },
       getDescSelect (value) {
-        var giocatore = undefined
+        var giocatore = {}
         if (this._.isArray(value)) {
           var listaPanchina = ''
           for (var i = 0; i < value.length; i++) {
             giocatore = this.findGiocatore(value[i])
             if (giocatore) {
-              listaPanchina += giocatore.label + ' ' + '<b>(' + giocatore.sublabel + ')</b>, '
+              listaPanchina += giocatore.label + ' ' + '<b>(' + giocatore.squadra + ')</b>, '
             }
           }
           if (listaPanchina.length > 0) {
@@ -330,13 +417,71 @@
           if (value) {
             giocatore = this.findGiocatore(value)
             if (giocatore) {
-              return giocatore.label + '<br> (' + giocatore.sublabel + ')'
+              return giocatore.label.substring(0, giocatore.label.indexOf('<') - 1) + '<br> (' + giocatore.squadra + ')'
             }
           }
         }
       },
       findGiocatore (idGiocatore) {
-        return this._.find(this.listaGiocatori, function (o) { return o.value === idGiocatore })
+        return this._.find(GIOCATORI, function (o) { return o.value === idGiocatore })
+      },
+      getDescGiocatore (id) {
+        if (id) {
+          var giocatore = this.findGiocatore(id).label
+          return giocatore.substring(0, giocatore.indexOf('<') - 1)
+        }
+      },
+      refreshTables () {
+        console.log('REFRESH TABLES')
+        // this.cleanDeselected()
+        var listSquadreSelezionate = []
+        for (var key in this.formazione) {
+          if (this.formazione[key]) {
+            var giocatore = this.findGiocatore(this.formazione[key])
+            if (giocatore) {
+              listSquadreSelezionate.push(giocatore.squadra)
+            }
+          }
+        }
+        for (var i = 0; i < this.panchina.length; i++) {
+          var panchinaro = this.findGiocatore(this.panchina[i])
+          if (panchinaro) {
+            listSquadreSelezionate.push(panchinaro.squadra)
+          }
+        }
+        var self = this
+        this.listaGiocatori = this._.filter(GIOCATORI, function (o) {
+          return self._.indexOf(listSquadreSelezionate, o.squadra) === -1
+        })
+        /*
+        this.listaPortieri = this._.filter(this.listaGiocatori, function (o) {
+          return o.ruolo === 'P'
+        })
+        this.listaDifensori = this._.filter(this.listaGiocatori, function (o) {
+          return o.ruolo === 'D'
+        })
+        this.listaCentrocampisti = this._.filter(this.listaGiocatori, function (o) {
+          return o.ruolo === 'C'
+        })
+        this.listaAttaccanti = this._.filter(this.listaGiocatori, function (o) {
+          return o.ruolo === 'A'
+        })
+        */
+
+        // this.listaGiocatori = this._.union(this._.drop(this.listaPortieri), this._.drop(this.listaDifensori), this._.drop(this.listaAttaccanti))
+      },
+      cleanDeselected () {
+        console.log('cleanDeselected')
+        for (var key in this.formazione) {
+          if (this.formazione[key] && this.formazione[key] === -1) {
+            this.formazione[key] = undefined
+          }
+        }
+      },
+      eliminaUltimaRiserva () {
+        console.log('eliminaUltimaRiserva')
+        this.panchina = this._.dropRight(this.panchina)
+        this.refreshTables()
       }
     }
   }

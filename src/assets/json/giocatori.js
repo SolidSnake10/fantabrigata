@@ -3,2613 +3,3135 @@
  */
 export const GIOCATORI = [
   {
-    'label': 'HIGUAIN',
     'value': 408,
-    'sublabel': 'Juventus'
+    'ruolo': 'A',
+    'label': 'HIGUAIN <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'BELOTTI',
     'value': 441,
-    'sublabel': 'Torino'
+    'ruolo': 'A',
+    'label': 'BELOTTI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'DZEKO',
     'value': 647,
-    'sublabel': 'Roma'
+    'ruolo': 'A',
+    'label': 'DZEKO <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'MERTENS',
     'value': 410,
-    'sublabel': 'Napoli'
+    'ruolo': 'A',
+    'label': 'MERTENS <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'ICARDI',
     'value': 277,
-    'sublabel': 'Inter'
+    'ruolo': 'A',
+    'label': 'ICARDI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'IMMOBILE',
     'value': 785,
-    'sublabel': 'Lazio'
+    'ruolo': 'A',
+    'label': 'IMMOBILE <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'INSIGNE',
-    'value': 4099,
-    'sublabel': 'Napoli'
+    'value': 409,
+    'ruolo': 'A',
+    'label': 'INSIGNE <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'DYBALA',
     'value': 309,
-    'sublabel': 'Juventus'
+    'ruolo': 'A',
+    'label': 'DYBALA <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'HAMSIK',
     'value': 402,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'HAMSIK <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'NAINGGOLAN',
     'value': 467,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'NAINGGOLAN <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'CALLEJON',
     'value': 406,
-    'sublabel': 'Napoli'
+    'ruolo': 'A',
+    'label': 'CALLEJON <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'KALINIC',
     'value': 652,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'A',
+    'label': 'KALINIC <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'GOMEZ A',
     'value': 26,
-    'sublabel': 'Atalanta'
+    'ruolo': 'A',
+    'label': 'GOMEZ A <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'KEITA B',
     'value': 345,
-    'sublabel': 'Lazio'
+    'ruolo': 'A',
+    'label': 'KEITA B <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'PERISIC',
     'value': 704,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'PERISIC <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'BORRIELLO',
     'value': 722,
-    'sublabel': 'Cagliari'
+    'ruolo': 'A',
+    'label': 'BORRIELLO <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'BACCA',
     'value': 377,
-    'sublabel': 'Milan'
+    'ruolo': 'A',
+    'label': 'BACCA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'BERNARDESCHI',
     'value': 184,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'BERNARDESCHI <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'FALCINELLI',
     'value': 532,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'FALCINELLI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'SCHICK',
     'value': 1974,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'A',
+    'label': 'SCHICK <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'FELIPE ANDERSON',
     'value': 335,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'FELIPE ANDERSON <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'SUSO',
     'value': 375,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'SUSO <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'BERARDI',
     'value': 531,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'BERARDI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'BUFFON',
     'value': 282,
-    'sublabel': 'Juventus'
+    'ruolo': 'P',
+    'label': 'BUFFON <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'DOUGLAS COSTA',
     'value': 2200,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'DOUGLAS COSTA <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'PJANIC',
     'value': 469,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'PJANIC <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'ZIELINSKI',
     'value': 152,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'ZIELINSKI <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'PAZZINI',
     'value': 636,
-    'sublabel': 'Verona'
+    'ruolo': 'A',
+    'label': 'PAZZINI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'QUAGLIARELLA',
     'value': 568,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'A',
+    'label': 'QUAGLIARELLA <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'MANDZUKIC',
     'value': 312,
-    'sublabel': 'Juventus'
+    'ruolo': 'A',
+    'label': 'MANDZUKIC <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'LAPADULA',
     'value': 1939,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'LAPADULA <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'SIMEONE',
     'value': 2061,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'SIMEONE <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'DESTRO',
     'value': 472,
-    'sublabel': 'Bologna'
+    'ruolo': 'A',
+    'label': 'DESTRO <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'DONNARUMMA G',
     'value': 350,
-    'sublabel': 'Milan'
+    'ruolo': 'P',
+    'label': 'DONNARUMMA G <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'VERDI',
     'value': 376,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'VERDI <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'BONAVENTURA',
     'value': 367,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'BONAVENTURA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'THEREAU',
     'value': 606,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'THEREAU <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'IAGO FALQUE',
     'value': 475,
-    'sublabel': 'Torino'
+    'ruolo': 'A',
+    'label': 'IAGO FALQUE <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'LJAJIC',
     'value': 478,
-    'sublabel': 'Torino'
+    'ruolo': 'A',
+    'label': 'LJAJIC <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'DEFREL',
     'value': 643,
-    'sublabel': 'Roma'
+    'ruolo': 'A',
+    'label': 'DEFREL <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'EL SHAARAWY',
     'value': 795,
-    'sublabel': 'Roma'
+    'ruolo': 'A',
+    'label': 'EL SHAARAWY <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'MILIK',
     'value': 2012,
-    'sublabel': 'Napoli'
+    'ruolo': 'A',
+    'label': 'MILIK <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'ZAPATA D',
     'value': 608,
-    'sublabel': 'Napoli'
+    'ruolo': 'A',
+    'label': 'ZAPATA D <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'ANDRE\' SILVA',
     'value': 2175,
-    'sublabel': 'Milan'
+    'ruolo': 'A',
+    'label': 'ANDRE\' SILVA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'REINA',
     'value': 387,
-    'sublabel': 'Napoli'
+    'ruolo': 'P',
+    'label': 'REINA <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'CALDARA',
     'value': 1847,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'CALDARA <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'JOAO PEDRO',
     'value': 1874,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'JOAO PEDRO <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'CANDREVA',
     'value': 332,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'CANDREVA <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'CALHANOGLU',
     'value': 2194,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'CALHANOGLU <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'PEROTTI',
     'value': 237,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'PEROTTI <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'BAJIC',
     'value': 2283,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'BAJIC <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'INGLESE',
     'value': 123,
-    'sublabel': 'Chievo'
+    'ruolo': 'A',
+    'label': 'INGLESE <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'PETAGNA',
     'value': 383,
-    'sublabel': 'Atalanta'
+    'ruolo': 'A',
+    'label': 'PETAGNA <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'HANDANOVIC',
     'value': 250,
-    'sublabel': 'Inter'
+    'ruolo': 'P',
+    'label': 'HANDANOVIC <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'BONUCCI',
     'value': 286,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'BONUCCI <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'RODRIGUEZ R',
     'value': 2169,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'RODRIGUEZ R <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'ALEX SANDRO',
     'value': 662,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'ALEX SANDRO <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'CHIESA',
     'value': 2002,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'CHIESA <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'KHEDIRA',
     'value': 299,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'KHEDIRA <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'MILINKOVIC-SAVIC',
     'value': 645,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'MILINKOVIC-SAVIC <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'RAMIREZ',
     'value': 2287,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'RAMIREZ <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'CERCI',
     'value': 378,
-    'sublabel': 'Verona'
+    'ruolo': 'A',
+    'label': 'CERCI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'POLITANO',
     'value': 536,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'POLITANO <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'ALISSON',
     'value': 1964,
-    'sublabel': 'Roma'
+    'ruolo': 'P',
+    'label': 'ALISSON <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'ACERBI',
     'value': 513,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'ACERBI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'KOULIBALY',
     'value': 392,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'KOULIBALY <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'CONTI',
     'value': 11,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'CONTI <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'DE VRIJ',
     'value': 322,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'DE VRIJ <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'CHIELLINI',
     'value': 288,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'CHIELLINI <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'BIRSA',
     'value': 111,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'BIRSA <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'STROOTMAN',
     'value': 470,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'STROOTMAN <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'JOVETIC',
     'value': 278,
-    'sublabel': 'Inter'
+    'ruolo': 'A',
+    'label': 'JOVETIC <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'PALOSCHI',
     'value': 126,
-    'sublabel': 'SPAL'
+    'ruolo': 'A',
+    'label': 'PALOSCHI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'CAPRARI',
     'value': 1958,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'A',
+    'label': 'CAPRARI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'FARIAS',
     'value': 1879,
-    'sublabel': 'Cagliari'
+    'ruolo': 'A',
+    'label': 'FARIAS <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'SAU',
     'value': 1882,
-    'sublabel': 'Cagliari'
+    'ruolo': 'A',
+    'label': 'SAU <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'STRAKOSHA',
     'value': 1934,
-    'sublabel': 'Lazio'
+    'ruolo': 'P',
+    'label': 'STRAKOSHA <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'KOLAROV',
     'value': 2214,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'KOLAROV <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'MANOLAS',
     'value': 459,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'MANOLAS <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'ILICIC',
     'value': 177,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'ILICIC <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'SAPONARA',
     'value': 150,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'SAPONARA <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'CUADRADO',
     'value': 697,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'CUADRADO <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'LULIC',
     'value': 338,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'LULIC <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'PAROLO',
     'value': 342,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'PAROLO <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'KESSIE\'',
     'value': 1850,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'KESSIE\' <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'BASELLI',
     'value': 556,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'BASELLI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'DE PAUL',
     'value': 1996,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'DE PAUL <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'FOFANA',
     'value': 1986,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'FOFANA <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'LASAGNA',
     'value': 90,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'LASAGNA <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'ANTENUCCI',
     'value': 2267,
-    'sublabel': 'SPAL'
+    'ruolo': 'A',
+    'label': 'ANTENUCCI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'OUNAS',
     'value': 2195,
-    'sublabel': 'Napoli'
+    'ruolo': 'A',
+    'label': 'OUNAS <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'PAVOLETTI',
     'value': 247,
-    'sublabel': 'Napoli'
+    'ruolo': 'A',
+    'label': 'PAVOLETTI <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'EDER',
     'value': 506,
-    'sublabel': 'Inter'
+    'ruolo': 'A',
+    'label': 'EDER <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'BABACAR',
     'value': 183,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'A',
+    'label': 'BABACAR <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'BUDIMIR',
     'value': 1973,
-    'sublabel': 'Crotone'
+    'ruolo': 'A',
+    'label': 'BUDIMIR <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'BERISHA',
     'value': 316,
-    'sublabel': 'Atalanta'
+    'ruolo': 'P',
+    'label': 'BERISHA <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'BENATIA',
     'value': 1931,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'BENATIA <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'CASTRO',
     'value': 112,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'CASTRO <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'BORJA VALERO',
     'value': 172,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'BORJA VALERO <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'GAGLIARDINI',
     'value': 801,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'GAGLIARDINI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'BIGLIA',
     'value': 331,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'BIGLIA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'FLORENZI',
     'value': 464,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'FLORENZI <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'PELLEGRINI',
     'value': 530,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'PELLEGRINI <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'JANKTO',
     'value': 1987,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'JANKTO <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'CAICEDO',
     'value': 2284,
-    'sublabel': 'Lazio'
+    'ruolo': 'A',
+    'label': 'CAICEDO <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'NIANG',
     'value': 382,
-    'sublabel': 'Milan'
+    'ruolo': 'A',
+    'label': 'NIANG <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'CERAVOLO',
     'value': 2246,
-    'sublabel': 'Benevento'
+    'ruolo': 'A',
+    'label': 'CERAVOLO <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'CORNELIUS',
     'value': 2163,
-    'sublabel': 'Atalanta'
+    'ruolo': 'A',
+    'label': 'CORNELIUS <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'SPORTIELLO',
     'value': 4,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'P',
+    'label': 'SPORTIELLO <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'VIVIANO',
     'value': 484,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'P',
+    'label': 'VIVIANO <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'ZAPPACOSTA',
     'value': 554,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'ZAPPACOSTA <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'BRUNO PERES',
     'value': 546,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'BRUNO PERES <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'FAZIO',
     'value': 2016,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'FAZIO <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'MUSACCHIO',
     'value': 2168,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'MUSACCHIO <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'ROMAGNOLI A',
     'value': 460,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'ROMAGNOLI A <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'MIRANDA',
     'value': 257,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'MIRANDA <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'MASIELLO A',
     'value': 15,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'MASIELLO A <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'KURTIC',
     'value': 28,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'KURTIC <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'CICIRETTI',
     'value': 2243,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'CICIRETTI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'DI FRANCESCO F',
     'value': 1857,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'DI FRANCESCO F <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'IONITA',
     'value': 627,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'IONITA <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'VECINO',
     'value': 181,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'VECINO <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'VERETOUT',
     'value': 2215,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'VERETOUT <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'JOAO MARIO',
     'value': 2078,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'JOAO MARIO <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'LUCAS LEIVA',
     'value': 2209,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'LUCAS LEIVA <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'UNDER',
     'value': 2201,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'UNDER <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'PERICA',
     'value': 605,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'PERICA <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'MATRI',
     'value': 380,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'MATRI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'TROTTA',
     'value': 789,
-    'sublabel': 'Crotone'
+    'ruolo': 'A',
+    'label': 'TROTTA <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'CONSIGLI',
     'value': 509,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'P',
+    'label': 'CONSIGLI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'SIRIGU',
     'value': 2179,
-    'sublabel': 'Torino'
+    'ruolo': 'P',
+    'label': 'SIRIGU <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'ROMULO',
     'value': 621,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'ROMULO <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'KARSDORP',
     'value': 2180,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'KARSDORP <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'ALBIOL',
     'value': 388,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'ALBIOL <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'GHOULAM',
     'value': 390,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'GHOULAM <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'LICHTSTEINER',
     'value': 292,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'LICHTSTEINER <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'RUGANI',
     'value': 294,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'RUGANI <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'ASTORI',
     'value': 642,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'D',
+    'label': 'ASTORI <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'FREULER',
     'value': 788,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'FREULER <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'TAIDER',
     'value': 275,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'TAIDER <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'BERTOLACCI',
     'value': 366,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'BERTOLACCI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'BROZOVIC',
     'value': 265,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'BROZOVIC <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'MARCHISIO',
     'value': 300,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'MARCHISIO <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'ALLAN',
     'value': 397,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'ALLAN <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'DE ROSSI',
     'value': 463,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'DE ROSSI <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'PRAET',
     'value': 2065,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'PRAET <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'BENASSI',
     'value': 557,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'BENASSI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'BERENGUER',
     'value': 2205,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'BERENGUER <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'BOYE\'',
     'value': 1981,
-    'sublabel': 'Torino'
+    'ruolo': 'A',
+    'label': 'BOYE\' <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'RAGUSA',
     'value': 2073,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'RAGUSA <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'PELLISSIER',
     'value': 127,
-    'sublabel': 'Chievo'
+    'ruolo': 'A',
+    'label': 'PELLISSIER <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'PUCCIARELLI',
     'value': 156,
-    'sublabel': 'Chievo'
+    'ruolo': 'A',
+    'label': 'PUCCIARELLI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'MIRANTE',
     'value': 41,
-    'sublabel': 'Bologna'
+    'ruolo': 'P',
+    'label': 'MIRANTE <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'CRAGNO',
     'value': 2178,
-    'sublabel': 'Cagliari'
+    'ruolo': 'P',
+    'label': 'CRAGNO <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'SORRENTINO',
     'value': 413,
-    'sublabel': 'Chievo'
+    'ruolo': 'P',
+    'label': 'SORRENTINO <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'PERIN',
     'value': 218,
-    'sublabel': 'Genoa'
+    'ruolo': 'P',
+    'label': 'PERIN <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'SCUFFET',
     'value': 574,
-    'sublabel': 'Udinese'
+    'ruolo': 'P',
+    'label': 'SCUFFET <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'N\'KOULOU',
     'value': 2288,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'N\'KOULOU <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'SAMIR',
     'value': 790,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'SAMIR <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'WIDMER',
     'value': 588,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'WIDMER <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'LYANCO',
     'value': 2171,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'LYANCO <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'HECTOR MORENO',
     'value': 2176,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'HECTOR MORENO <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'HYSAJ',
     'value': 140,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'HYSAJ <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'MURILLO',
     'value': 259,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'MURILLO <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'SKRINIAR',
     'value': 798,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'SKRINIAR <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'VITOR HUGO',
     'value': 2165,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'D',
+    'label': 'VITOR HUGO <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'ANDREOLLI',
     'value': 251,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'ANDREOLLI <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'CRISTANTE',
     'value': 779,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'CRISTANTE <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'SPINAZZOLA',
     'value': 1852,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'SPINAZZOLA <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'KREJCI',
     'value': 1858,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'KREJCI <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'NALINI',
     'value': 1906,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'NALINI <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'LAXALT',
     'value': 235,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'LAXALT <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'LAZOVIC',
     'value': 236,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'LAZOVIC <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'NINKOVIC',
     'value': 809,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'NINKOVIC <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'ALVAREZ R',
     'value': 775,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'ALVAREZ R <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'DUNCAN',
     'value': 526,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'DUNCAN <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'MISSIROLI',
     'value': 529,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'MISSIROLI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'BESSA',
     'value': 264,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'BESSA <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'IEMMELLO',
     'value': 2086,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'IEMMELLO <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'BORINI',
     'value': 2187,
-    'sublabel': 'Milan'
+    'ruolo': 'A',
+    'label': 'BORINI <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'PJACA',
     'value': 1998,
-    'sublabel': 'Juventus'
+    'ruolo': 'A',
+    'label': 'PJACA <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'CODA M',
     'value': 2190,
-    'sublabel': 'Benevento'
+    'ruolo': 'A',
+    'label': 'CODA M <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'CORDAZ',
     'value': 1889,
-    'sublabel': 'Crotone'
+    'ruolo': 'P',
+    'label': 'CORDAZ <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'CACERES',
     'value': 287,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'CACERES <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'NUYTINCK',
     'value': 2280,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'NUYTINCK <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'HEURTAUX',
     'value': 583,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'HEURTAUX <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'SOUPRAYEN',
     'value': 622,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'SOUPRAYEN <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'DANILO',
     'value': 578,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'DANILO <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'BARRECA',
     'value': 1979,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'BARRECA <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'PELUSO',
     'value': 521,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'PELUSO <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'MURRU',
     'value': 1868,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'MURRU <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'SILVESTRE',
     'value': 492,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'SILVESTRE <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'MAKSIMOVIC',
     'value': 550,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'MAKSIMOVIC <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'RADU',
     'value': 329,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'RADU <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'BARZAGLI',
     'value': 285,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'BARZAGLI <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'D\'AMBROSIO',
     'value': 253,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'D\'AMBROSIO <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'IZZO',
     'value': 226,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'IZZO <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'GASPAR',
     'value': 2177,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'D',
+    'label': 'GASPAR <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'GAMBERINI',
     'value': 104,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'GAMBERINI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'MASINA',
     'value': 49,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'MASINA <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'TOLOI',
     'value': 695,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'TOLOI <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'D\'ALESSANDRO',
     'value': 21,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'D\'ALESSANDRO <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'NAGY',
     'value': 1859,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'NAGY <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'POLI',
     'value': 374,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'POLI <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'CIGARINI',
     'value': 20,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'CIGARINI <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'ROHDEN',
     'value': 2014,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'ROHDEN <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'STOIAN',
     'value': 121,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'STOIAN <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'BADELJ',
     'value': 170,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'BADELJ <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'MIGUEL VELOSO',
     'value': 2011,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'MIGUEL VELOSO <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'RIGONI L',
     'value': 438,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'RIGONI L <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'KONDOGBIA',
     'value': 270,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'KONDOGBIA <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'LEMINA',
     'value': 712,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'LEMINA <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'DIAWARA',
     'value': 58,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'DIAWARA <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'JORGINHO',
     'value': 404,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'JORGINHO <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'BARRETO E',
     'value': 494,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'BARRETO E <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'LINETTY',
     'value': 2008,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'LINETTY <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'TORREIRA',
     'value': 1972,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'TORREIRA <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'MAGNANELLI',
     'value': 528,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'MAGNANELLI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'LAZZARI M',
     'value': 2263,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'LAZZARI M <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'VIVIANI',
     'value': 631,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'VIVIANI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'HALLFREDSSON',
     'value': 626,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'HALLFREDSSON <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'ZUCULINI B',
     'value': 2199,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'ZUCULINI B <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'VERDE',
     'value': 215,
-    'sublabel': 'Verona'
+    'ruolo': 'A',
+    'label': 'VERDE <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'PANDEV',
     'value': 245,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'PANDEV <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'PUSCAS',
     'value': 281,
-    'sublabel': 'Benevento'
+    'ruolo': 'A',
+    'label': 'PUSCAS <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'ORSOLINI',
     'value': 2167,
-    'sublabel': 'Atalanta'
+    'ruolo': 'A',
+    'label': 'ORSOLINI <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'BELEC',
     'value': 720,
-    'sublabel': 'Benevento'
+    'ruolo': 'P',
+    'label': 'BELEC <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'MARCHETTI',
     'value': 318,
-    'sublabel': 'Lazio'
+    'ruolo': 'P',
+    'label': 'MARCHETTI <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'MERET',
     'value': 572,
-    'sublabel': 'SPAL'
+    'ruolo': 'P',
+    'label': 'MERET <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'NICOLAS',
     'value': 2271,
-    'sublabel': 'Verona'
+    'ruolo': 'P',
+    'label': 'NICOLAS <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'GOLDANIGA',
     'value': 418,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'GOLDANIGA <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'BIANCHETTI',
     'value': 612,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'BIANCHETTI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'FERRARI A',
     'value': 45,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'FERRARI A <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'ROSSETTINI',
     'value': 54,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'ROSSETTINI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'FELIPE',
     'value': 708,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'FELIPE <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'OIKONOMOU',
     'value': 52,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'OIKONOMOU <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'CANNAVARO',
     'value': 516,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'CANNAVARO <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'FERRARI G',
     'value': 1895,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'FERRARI G <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'LIROLA',
     'value': 2006,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'LIROLA <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'JUAN JESUS',
     'value': 256,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'JUAN JESUS <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'MARIO RUI',
     'value': 142,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'MARIO RUI <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'BASTA',
     'value': 319,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'BASTA <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'WALLACE',
     'value': 2007,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'WALLACE <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'DE SCIGLIO',
     'value': 358,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'DE SCIGLIO <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'ANSALDI',
     'value': 706,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'ANSALDI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'ZUKANOVIC',
     'value': 493,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'ZUKANOVIC <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'OLIVERA M',
     'value': 2087,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'D',
+    'label': 'OLIVERA M <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'CABRERA',
     'value': 2202,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'CABRERA <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'CECCHERINI',
     'value': 1891,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'CECCHERINI <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'CACCIATORE',
     'value': 99,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'CACCIATORE <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'GOBBI',
     'value': 105,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'GOBBI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'MIANGUE',
     'value': 2037,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'MIANGUE <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'PADOIN',
     'value': 301,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'PADOIN <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'PISACANE',
     'value': 1869,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'PISACANE <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'LETIZIA',
     'value': 74,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'LETIZIA <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'LUCIONI',
     'value': 2241,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'LUCIONI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'CASTAGNE',
     'value': 2197,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'CASTAGNE <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'HATEBOER',
     'value': 2130,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'HATEBOER <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'HETEMAJ',
     'value': 115,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'HETEMAJ <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'BARBERIS',
     'value': 1901,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'BARBERIS <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'KRAGL',
     'value': 772,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'KRAGL <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'RINCON',
     'value': 238,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'RINCON <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'MARUSIC',
     'value': 2188,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'MARUSIC <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'GONALONS',
     'value': 2193,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'GONALONS <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'SENSI',
     'value': 1978,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'SENSI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'GRASSI',
     'value': 27,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'GRASSI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'MORA',
     'value': 2264,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'MORA <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'VALOTI',
     'value': 2274,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'VALOTI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'TAARABT',
     'value': 2111,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'TAARABT <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'MEGGIORINI',
     'value': 124,
-    'sublabel': 'Chievo'
+    'ruolo': 'A',
+    'label': 'MEGGIORINI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'CARACCIOLO A',
     'value': 2273,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'CARACCIOLO A <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'DE SILVESTRI',
     'value': 487,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'DE SILVESTRI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'COSTA F',
     'value': 817,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'COSTA F <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'VICARI',
     'value': 2261,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'VICARI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'REGINI',
     'value': 490,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'REGINI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'CHIRICHES',
     'value': 640,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'CHIRICHES <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'PALETTA',
     'value': 360,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'PALETTA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'HOEDT',
     'value': 324,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'HOEDT <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'LUKAKU',
     'value': 1999,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'LUKAKU <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'ASAMOAH',
     'value': 295,
-    'sublabel': 'Juventus'
+    'ruolo': 'D',
+    'label': 'ASAMOAH <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'BIRASCHI',
     'value': 2083,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'BIRASCHI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'MUNOZ',
     'value': 228,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'MUNOZ <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'MARTELLA',
     'value': 1896,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'MARTELLA <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'SAMPIRISI',
     'value': 1898,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'SAMPIRISI <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'CESAR',
     'value': 100,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'CESAR <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'DE MAIO',
     'value': 224,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'DE MAIO <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'GONZALEZ G',
     'value': 419,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'GONZALEZ G <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'MAIETTA',
     'value': 48,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'MAIETTA <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'COSTA',
     'value': 138,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'COSTA <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'DI CHIARA',
     'value': 2203,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'DI CHIARA <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'PALOMINO',
     'value': 2181,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'PALOMINO <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'CATALDI',
     'value': 333,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'CATALDI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'CHIBSAH',
     'value': 202,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'CHIBSAH <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'DONSAH',
     'value': 669,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'DONSAH <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'FALLETTI',
     'value': 2210,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'FALLETTI <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'RADOVANOVIC',
     'value': 118,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'RADOVANOVIC <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'TONEV',
     'value': 700,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'TONEV <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'HILJEMARK',
     'value': 433,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'HILJEMARK <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'MEDEL',
     'value': 272,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'MEDEL <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'ROG',
     'value': 2076,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'ROG <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'CAPEZZI',
     'value': 173,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'CAPEZZI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'VERRE',
     'value': 600,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'VERRE <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'RIZZO',
     'value': 60,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'RIZZO <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'SCHIATTARELLA',
     'value': 2265,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'SCHIATTARELLA <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'ACQUAH',
     'value': 555,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'ACQUAH <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'VALDIFIORI',
     'value': 405,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'VALDIFIORI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'FOSSATI',
     'value': 1992,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'FOSSATI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'LUPPI',
     'value': 2275,
-    'sublabel': 'Verona'
+    'ruolo': 'A',
+    'label': 'LUPPI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'FLOCCARI',
     'value': 533,
-    'sublabel': 'SPAL'
+    'ruolo': 'A',
+    'label': 'FLOCCARI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'ITURBE',
     'value': 477,
-    'sublabel': 'Roma'
+    'ruolo': 'A',
+    'label': 'ITURBE <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'DJORDJEVIC',
     'value': 344,
-    'sublabel': 'Lazio'
+    'ruolo': 'A',
+    'label': 'DJORDJEVIC <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'GABIGOL',
     'value': 2082,
-    'sublabel': 'Inter'
+    'ruolo': 'A',
+    'label': 'GABIGOL <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'PALLADINO',
     'value': 1909,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'PALLADINO <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'SPOLLI',
     'value': 78,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'SPOLLI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'VAISANEN',
     'value': 2212,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'VAISANEN <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'ANGELLA',
     'value': 1984,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'ANGELLA <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'PEZZELLA',
     'value': 770,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'PEZZELLA <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'BONIFAZI',
     'value': 2192,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'BONIFAZI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'MOLINARO',
     'value': 551,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'MOLINARO <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'MORETTI',
     'value': 552,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'MORETTI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'MATTIELLO',
     'value': 106,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'MATTIELLO <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'LETSCHERT',
     'value': 2015,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'LETSCHERT <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'BERESZYNSKI',
     'value': 2104,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'BERESZYNSKI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'SALA',
     'value': 630,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'SALA <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'EMERSON',
     'value': 417,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'EMERSON <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'TONELLI',
     'value': 144,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'TONELLI <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'ABATE',
     'value': 353,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'ABATE <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'ANTONELLI',
     'value': 356,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'ANTONELLI <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'CALABRIA',
     'value': 357,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'CALABRIA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'ZAPATA C',
     'value': 365,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'ZAPATA C <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'BASTOS',
     'value': 2062,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'BASTOS <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'NAGATOMO',
     'value': 260,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'NAGATOMO <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'TOMOVIC',
     'value': 169,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'D',
+    'label': 'TOMOVIC <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'DAINELLI',
     'value': 101,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'DAINELLI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'CEPPITELLI',
     'value': 1866,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'CEPPITELLI <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'GASTALDELLO',
     'value': 47,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'GASTALDELLO <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'KRAFTH',
     'value': 663,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'KRAFTH <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'MBAYE',
     'value': 50,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'MBAYE <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'VENUTI',
     'value': 2174,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'VENUTI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'JOAO SCHMIDT',
     'value': 2162,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'JOAO SCHMIDT <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'VIOLA',
     'value': 440,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'VIOLA <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'PULGAR',
     'value': 644,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'PULGAR <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'BARELLA',
     'value': 1870,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'BARELLA <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'DESSENA',
     'value': 1872,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'DESSENA <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'BASTIEN',
     'value': 2072,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'BASTIEN <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'GARRITANO',
     'value': 2183,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'GARRITANO <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'GAUDINO',
     'value': 2185,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'GAUDINO <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'CRISTOFORO',
     'value': 2075,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'CRISTOFORO <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'FERNANDEZ M',
     'value': 176,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'FERNANDEZ M <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'SANCHEZ',
     'value': 2058,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'SANCHEZ <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'STURARO',
     'value': 305,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'STURARO <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'DI GENNARO D',
     'value': 1873,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'DI GENNARO D <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'LUIS ALBERTO',
     'value': 2085,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'LUIS ALBERTO <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'MONTOLIVO',
     'value': 372,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'MONTOLIVO <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'GIACCHERINI',
     'value': 702,
-    'sublabel': 'Napoli'
+    'ruolo': 'C',
+    'label': 'GIACCHERINI <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'BIONDINI',
     'value': 524,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'BIONDINI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'MAZZITELLI',
     'value': 1976,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'MAZZITELLI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'ARINI',
     'value': 2262,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'ARINI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'BALIC',
     'value': 813,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'BALIC <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'KONE',
     'value': 594,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'KONE <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'BUCHEL',
     'value': 297,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'BUCHEL <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'ZACCAGNI',
     'value': 632,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'ZACCAGNI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'VIDO',
     'value': 2281,
-    'sublabel': 'Atalanta'
+    'ruolo': 'A',
+    'label': 'VIDO <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'RICCI',
     'value': 2013,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'A',
+    'label': 'RICCI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'GALABINOV',
     'value': 2196,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'GALABINOV <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'CREMONESI',
     'value': 1893,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'CREMONESI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'ROMAGNA',
     'value': 2279,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'ROMAGNA <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'BROSCO',
     'value': 2272,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'BROSCO <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'ADNAN',
     'value': 575,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'ADNAN <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'GABRIEL SILVA',
     'value': 582,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'GABRIEL SILVA <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'WAGUE',
     'value': 587,
-    'sublabel': 'Udinese'
+    'ruolo': 'D',
+    'label': 'WAGUE <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'AJETI',
     'value': 765,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'AJETI <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'KONATE',
     'value': 2216,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'KONATE <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'ADJAPONG',
     'value': 824,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'ADJAPONG <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'DELL\'ORCO',
     'value': 517,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'DELL\'ORCO <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'GAZZOLA',
     'value': 519,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'GAZZOLA <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'PAVLOVIC',
     'value': 197,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'PAVLOVIC <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'MAGGIO',
     'value': 394,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'MAGGIO <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'GOMEZ G',
     'value': 2052,
-    'sublabel': 'Milan'
+    'ruolo': 'D',
+    'label': 'GOMEZ G <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'SANTON',
     'value': 262,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'SANTON <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'GENTILETTI',
     'value': 323,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'GENTILETTI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'ROSI',
     'value': 198,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'ROSI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'MILENKOVIC',
     'value': 2164,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'D',
+    'label': 'MILENKOVIC <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'JAROSZYNSKI',
     'value': 2208,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'JAROSZYNSKI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'CAPUANO',
     'value': 1865,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'CAPUANO <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'HELANDER',
     'value': 615,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'HELANDER <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'TOROSIDIS',
     'value': 461,
-    'sublabel': 'Bologna'
+    'ruolo': 'D',
+    'label': 'TOROSIDIS <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'CAMPORESE',
     'value': 137,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'CAMPORESE <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'HAAS',
     'value': 2161,
-    'sublabel': 'Atalanta'
+    'ruolo': 'C',
+    'label': 'HAAS <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'ERAMO',
     'value': 1971,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'ERAMO <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'CRISETIG',
     'value': 57,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'CRISETIG <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'FARAGO\'',
     'value': 2116,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'FARAGO\' <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'RIGONI N',
     'value': 119,
-    'sublabel': 'Chievo'
+    'ruolo': 'C',
+    'label': 'RIGONI N <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'IZCO',
     'value': 116,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'IZCO <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'BENTANCUR',
     'value': 2166,
-    'sublabel': 'Juventus'
+    'ruolo': 'C',
+    'label': 'BENTANCUR <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'MANDRAGORA',
     'value': 1933,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'MANDRAGORA <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'MURGIA',
     'value': 2003,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'MURGIA <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'LOCATELLI M',
     'value': 827,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'LOCATELLI M <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'GERSON',
     'value': 1967,
-    'sublabel': 'Roma'
+    'ruolo': 'C',
+    'label': 'GERSON <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'DJURICIC',
     'value': 1995,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'C',
+    'label': 'DJURICIC <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'LUKIC',
     'value': 2009,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'LUKIC <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'OBI',
     'value': 560,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'OBI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'ZUCULINI F',
     'value': 61,
-    'sublabel': 'Verona'
+    'ruolo': 'C',
+    'label': 'ZUCULINI F <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'FARES',
     'value': 633,
-    'sublabel': 'Verona'
+    'ruolo': 'A',
+    'label': 'FARES <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'EWANDRO',
     'value': 1988,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'EWANDRO <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'MATOS',
     'value': 92,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'MATOS <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'MAXI LOPEZ',
     'value': 566,
-    'sublabel': 'Torino'
+    'ruolo': 'A',
+    'label': 'MAXI LOPEZ <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'PARIGINI',
     'value': 1982,
-    'sublabel': 'Torino'
+    'ruolo': 'A',
+    'label': 'PARIGINI <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'KOWNACKI',
     'value': 2198,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'A',
+    'label': 'KOWNACKI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'SADIQ',
     'value': 764,
-    'sublabel': 'Roma'
+    'ruolo': 'A',
+    'label': 'SADIQ <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'KISHNA',
     'value': 337,
-    'sublabel': 'Lazio'
+    'ruolo': 'A',
+    'label': 'KISHNA <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'KEAN',
     'value': 2097,
-    'sublabel': 'Juventus'
+    'ruolo': 'A',
+    'label': 'KEAN <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'PINAMONTI',
     'value': 2038,
-    'sublabel': 'Inter'
+    'ruolo': 'A',
+    'label': 'PINAMONTI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'ZEKHNINI',
     'value': 2207,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'A',
+    'label': 'ZEKHNINI <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'SIMY',
     'value': 1997,
-    'sublabel': 'Crotone'
+    'ruolo': 'A',
+    'label': 'SIMY <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'MELCHIORRI',
     'value': 1881,
-    'sublabel': 'Cagliari'
+    'ruolo': 'A',
+    'label': 'MELCHIORRI <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'PETKOVIC',
     'value': 2114,
-    'sublabel': 'Bologna'
+    'ruolo': 'A',
+    'label': 'PETKOVIC <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'BANI',
     'value': 2285,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'BANI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'FELICIOLI',
     'value': 2206,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'FELICIOLI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'AVELAR',
     'value': 544,
-    'sublabel': 'Torino'
+    'ruolo': 'D',
+    'label': 'AVELAR <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'ANTEI',
     'value': 514,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'ANTEI <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'SIMIC L',
     'value': 2129,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'SIMIC L <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'STRINIC',
     'value': 395,
-    'sublabel': 'Napoli'
+    'ruolo': 'D',
+    'label': 'STRINIC <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'PATRIC',
     'value': 327,
-    'sublabel': 'Lazio'
+    'ruolo': 'D',
+    'label': 'PATRIC <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'RANOCCHIA',
     'value': 261,
-    'sublabel': 'Inter'
+    'ruolo': 'D',
+    'label': 'RANOCCHIA <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'FARAONI',
     'value': 581,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'FARAONI <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'DJIMSITI',
     'value': 787,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'DJIMSITI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'GOSENS',
     'value': 2160,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'GOSENS <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'MOUNIER',
     'value': 703,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'MOUNIER <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'DEIOLA',
     'value': 1871,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'DEIOLA <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'HAGI',
     'value': 2032,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'C',
+    'label': 'HAGI <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'JOSE\' SOSA',
     'value': 2063,
-    'sublabel': 'Milan'
+    'ruolo': 'C',
+    'label': 'JOSE\' SOSA <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'CASSATA',
     'value': 2213,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'C',
+    'label': 'CASSATA <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'SCHIAVON',
     'value': 2266,
-    'sublabel': 'SPAL'
+    'ruolo': 'C',
+    'label': 'SCHIAVON <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'INGELSSON',
     'value': 2191,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'INGELSSON <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'CROCIATA',
     'value': 2286,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'CROCIATA <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'FINOTTO',
     'value': 2268,
-    'sublabel': 'SPAL'
+    'ruolo': 'A',
+    'label': 'FINOTTO <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'CUTRONE',
     'value': 2155,
-    'sublabel': 'Milan'
+    'ruolo': 'A',
+    'label': 'CUTRONE <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'REBIC',
     'value': 186,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'A',
+    'label': 'REBIC <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'CISSE\' K',
     'value': 2247,
-    'sublabel': 'Benevento'
+    'ruolo': 'A',
+    'label': 'CISSE\' K <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'GOLLINI',
     'value': 610,
-    'sublabel': 'Atalanta'
+    'ruolo': 'P',
+    'label': 'GOLLINI <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'RADUNOVIC',
     'value': 3,
-    'sublabel': 'Atalanta'
+    'ruolo': 'P',
+    'label': 'RADUNOVIC <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'DA COSTA',
     'value': 40,
-    'sublabel': 'Bologna'
+    'ruolo': 'P',
+    'label': 'DA COSTA <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'SANTURRO',
     'value': 2249,
-    'sublabel': 'Bologna'
+    'ruolo': 'P',
+    'label': 'SANTURRO <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'CROSTA',
     'value': 2156,
-    'sublabel': 'Cagliari'
+    'ruolo': 'P',
+    'label': 'CROSTA <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'RAFAEL',
     'value': 611,
-    'sublabel': 'Cagliari'
+    'ruolo': 'P',
+    'label': 'RAFAEL <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'SECULIN',
     'value': 97,
-    'sublabel': 'Chievo'
+    'ruolo': 'P',
+    'label': 'SECULIN <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'FESTA',
     'value': 1890,
-    'sublabel': 'Crotone'
+    'ruolo': 'P',
+    'label': 'FESTA <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'VISCOVO',
     'value': 2251,
-    'sublabel': 'Crotone'
+    'ruolo': 'P',
+    'label': 'VISCOVO <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'DRAGOWSKI',
     'value': 1917,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'P',
+    'label': 'DRAGOWSKI <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'SATALINO',
     'value': 2127,
-    'sublabel': 'Fiorentina'
+    'ruolo': 'P',
+    'label': 'SATALINO <br> <span style=\'color:  grey\'>Fiorentina</span>',
+    'squadra': 'Fiorentina'
   },
   {
-    'label': 'LAMANNA',
     'value': 217,
-    'sublabel': 'Genoa'
+    'ruolo': 'P',
+    'label': 'LAMANNA <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'ZIMA',
     'value': 1921,
-    'sublabel': 'Genoa'
+    'ruolo': 'P',
+    'label': 'ZIMA <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'BERNI',
     'value': 248,
-    'sublabel': 'Inter'
+    'ruolo': 'P',
+    'label': 'BERNI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'PADELLI',
     'value': 543,
-    'sublabel': 'Inter'
+    'ruolo': 'P',
+    'label': 'PADELLI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'PINSOGLIO',
     'value': 1930,
-    'sublabel': 'Juventus'
+    'ruolo': 'P',
+    'label': 'PINSOGLIO <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'SZCZESNY',
     'value': 453,
-    'sublabel': 'Juventus'
+    'ruolo': 'P',
+    'label': 'SZCZESNY <br> <span style=\'color:  grey\'>Juventus</span>',
+    'squadra': 'Juventus'
   },
   {
-    'label': 'GUERRIERI',
     'value': 317,
-    'sublabel': 'Lazio'
+    'ruolo': 'P',
+    'label': 'GUERRIERI <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'VARGIC',
     'value': 1935,
-    'sublabel': 'Lazio'
+    'ruolo': 'P',
+    'label': 'VARGIC <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'DONNARUMMA A',
     'value': 216,
-    'sublabel': 'Milan'
+    'ruolo': 'P',
+    'label': 'DONNARUMMA A <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'GABRIEL',
     'value': 385,
-    'sublabel': 'Milan'
+    'ruolo': 'P',
+    'label': 'GABRIEL <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'STORARI',
     'value': 1863,
-    'sublabel': 'Milan'
+    'ruolo': 'P',
+    'label': 'STORARI <br> <span style=\'color:  grey\'>Milan</span>',
+    'squadra': 'Milan'
   },
   {
-    'label': 'RAFAEL CABRAL',
     'value': 386,
-    'sublabel': 'Napoli'
+    'ruolo': 'P',
+    'label': 'RAFAEL CABRAL <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'SEPE',
     'value': 159,
-    'sublabel': 'Napoli'
+    'ruolo': 'P',
+    'label': 'SEPE <br> <span style=\'color:  grey\'>Napoli</span>',
+    'squadra': 'Napoli'
   },
   {
-    'label': 'LOBONT',
     'value': 451,
-    'sublabel': 'Roma'
+    'ruolo': 'P',
+    'label': 'LOBONT <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'SKORUPSKI',
     'value': 133,
-    'sublabel': 'Roma'
+    'ruolo': 'P',
+    'label': 'SKORUPSKI <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'PUGGIONI',
     'value': 483,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'P',
+    'label': 'PUGGIONI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'TOZZO',
     'value': 1970,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'P',
+    'label': 'TOZZO <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'PEGOLO',
     'value': 510,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'P',
+    'label': 'PEGOLO <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'GOMIS A',
     'value': 540,
-    'sublabel': 'SPAL'
+    'ruolo': 'P',
+    'label': 'GOMIS A <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'MARCHEGIANI',
     'value': 2255,
-    'sublabel': 'SPAL'
+    'ruolo': 'P',
+    'label': 'MARCHEGIANI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'POLUZZI',
     'value': 2256,
-    'sublabel': 'SPAL'
+    'ruolo': 'P',
+    'label': 'POLUZZI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'ICHAZO',
     'value': 542,
-    'sublabel': 'Torino'
+    'ruolo': 'P',
+    'label': 'ICHAZO <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'MILINKOVIC-SAVIC V',
     'value': 2170,
-    'sublabel': 'Torino'
+    'ruolo': 'P',
+    'label': 'MILINKOVIC-SAVIC V <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'ZACCAGNO',
     'value': 2270,
-    'sublabel': 'Torino'
+    'ruolo': 'P',
+    'label': 'ZACCAGNO <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'BIZZARRI',
     'value': 95,
-    'sublabel': 'Udinese'
+    'ruolo': 'P',
+    'label': 'BIZZARRI <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'KARNEZIS',
     'value': 570,
-    'sublabel': 'Udinese'
+    'ruolo': 'P',
+    'label': 'KARNEZIS <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'COPPOLA',
     'value': 609,
-    'sublabel': 'Verona'
+    'ruolo': 'P',
+    'label': 'COPPOLA <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'SILVESTRI',
     'value': 2211,
-    'sublabel': 'Verona'
+    'ruolo': 'P',
+    'label': 'SILVESTRI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'COTTICELLI',
     'value': 2276,
-    'sublabel': 'Benevento'
+    'ruolo': 'P',
+    'label': 'COTTICELLI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'MARSON',
     'value': 821,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'P',
+    'label': 'MARSON <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'BRIGNOLI',
     'value': 481,
-    'sublabel': 'Benevento'
+    'ruolo': 'P',
+    'label': 'BRIGNOLI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'ALBERTAZZI',
     'value': 354,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'ALBERTAZZI <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'CHERUBIN',
     'value': 10,
-    'sublabel': 'Verona'
+    'ruolo': 'D',
+    'label': 'CHERUBIN <br> <span style=\'color:  grey\'>Verona</span>',
+    'squadra': 'Verona'
   },
   {
-    'label': 'GASPARETTO',
     'value': 2258,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'GASPARETTO <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'POLVANI',
     'value': 2259,
-    'sublabel': 'SPAL'
+    'ruolo': 'D',
+    'label': 'POLVANI <br> <span style=\'color:  grey\'>SPAL</span>',
+    'squadra': 'SPAL'
   },
   {
-    'label': 'MARCHIZZA',
     'value': 2252,
-    'sublabel': 'Sassuolo'
+    'ruolo': 'D',
+    'label': 'MARCHIZZA <br> <span style=\'color:  grey\'>Sassuolo</span>',
+    'squadra': 'Sassuolo'
   },
   {
-    'label': 'DODO\'',
     'value': 255,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'D',
+    'label': 'DODO\' <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'CASTAN',
     'value': 455,
-    'sublabel': 'Roma'
+    'ruolo': 'D',
+    'label': 'CASTAN <br> <span style=\'color:  grey\'>Roma</span>',
+    'squadra': 'Roma'
   },
   {
-    'label': 'BRIVIO',
     'value': 8,
-    'sublabel': 'Genoa'
+    'ruolo': 'D',
+    'label': 'BRIVIO <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'DUSSENNE',
     'value': 2071,
-    'sublabel': 'Crotone'
+    'ruolo': 'D',
+    'label': 'DUSSENNE <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'DEPAOLI',
     'value': 2141,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'DEPAOLI <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'FREY',
     'value': 103,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'FREY <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'RIGIONE',
     'value': 2182,
-    'sublabel': 'Chievo'
+    'ruolo': 'D',
+    'label': 'RIGIONE <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'SALAMON',
     'value': 491,
-    'sublabel': 'Cagliari'
+    'ruolo': 'D',
+    'label': 'SALAMON <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'GRAVILLON',
     'value': 2184,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'GRAVILLON <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'GYAMFI',
     'value': 2239,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'GYAMFI <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'LOPEZ W',
     'value': 2240,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'LOPEZ W <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'PADELLA',
     'value': 2242,
-    'sublabel': 'Benevento'
+    'ruolo': 'D',
+    'label': 'PADELLA <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'BASTONI',
     'value': 2120,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'BASTONI <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'DRAME\'',
     'value': 13,
-    'sublabel': 'Atalanta'
+    'ruolo': 'D',
+    'label': 'DRAME\' <br> <span style=\'color:  grey\'>Atalanta</span>',
+    'squadra': 'Atalanta'
   },
   {
-    'label': 'DEL PINTO',
     'value': 2244,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'DEL PINTO <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'MELARA',
     'value': 2245,
-    'sublabel': 'Benevento'
+    'ruolo': 'C',
+    'label': 'MELARA <br> <span style=\'color:  grey\'>Benevento</span>',
+    'squadra': 'Benevento'
   },
   {
-    'label': 'FALCO',
     'value': 658,
-    'sublabel': 'Bologna'
+    'ruolo': 'C',
+    'label': 'FALCO <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   },
   {
-    'label': 'COSSU',
     'value': 2204,
-    'sublabel': 'Cagliari'
+    'ruolo': 'C',
+    'label': 'COSSU <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'KOTNIK',
     'value': 2132,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'KOTNIK <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'SULJIC',
     'value': 2138,
-    'sublabel': 'Crotone'
+    'ruolo': 'C',
+    'label': 'SULJIC <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'COFIE',
     'value': 232,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'COFIE <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'MOROSINI',
     'value': 2106,
-    'sublabel': 'Genoa'
+    'ruolo': 'C',
+    'label': 'MOROSINI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'GNOUKOURI',
     'value': 267,
-    'sublabel': 'Inter'
+    'ruolo': 'C',
+    'label': 'GNOUKOURI <br> <span style=\'color:  grey\'>Inter</span>',
+    'squadra': 'Inter'
   },
   {
-    'label': 'CRECCO',
     'value': 334,
-    'sublabel': 'Lazio'
+    'ruolo': 'C',
+    'label': 'CRECCO <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'GUSTAFSON',
     'value': 2057,
-    'sublabel': 'Torino'
+    'ruolo': 'C',
+    'label': 'GUSTAFSON <br> <span style=\'color:  grey\'>Torino</span>',
+    'squadra': 'Torino'
   },
   {
-    'label': 'BARAK',
     'value': 2172,
-    'sublabel': 'Udinese'
+    'ruolo': 'C',
+    'label': 'BARAK <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'MALLE\'',
     'value': 2173,
-    'sublabel': 'Udinese'
+    'ruolo': 'A',
+    'label': 'MALLE\' <br> <span style=\'color:  grey\'>Udinese</span>',
+    'squadra': 'Udinese'
   },
   {
-    'label': 'BONAZZOLI',
     'value': 505,
-    'sublabel': 'Sampdoria'
+    'ruolo': 'A',
+    'label': 'BONAZZOLI <br> <span style=\'color:  grey\'>Sampdoria</span>',
+    'squadra': 'Sampdoria'
   },
   {
-    'label': 'LOMBARDI',
     'value': 2040,
-    'sublabel': 'Lazio'
+    'ruolo': 'A',
+    'label': 'LOMBARDI <br> <span style=\'color:  grey\'>Lazio</span>',
+    'squadra': 'Lazio'
   },
   {
-    'label': 'GAKPE\'',
     'value': 243,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'GAKPE\' <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'PELLEGRI',
     'value': 2103,
-    'sublabel': 'Genoa'
+    'ruolo': 'A',
+    'label': 'PELLEGRI <br> <span style=\'color:  grey\'>Genoa</span>',
+    'squadra': 'Genoa'
   },
   {
-    'label': 'ACOSTY',
     'value': 182,
-    'sublabel': 'Crotone'
+    'ruolo': 'A',
+    'label': 'ACOSTY <br> <span style=\'color:  grey\'>Crotone</span>',
+    'squadra': 'Crotone'
   },
   {
-    'label': 'RODRIGUEZ A',
     'value': 718,
-    'sublabel': 'Chievo'
+    'ruolo': 'A',
+    'label': 'RODRIGUEZ A <br> <span style=\'color:  grey\'>Chievo</span>',
+    'squadra': 'Chievo'
   },
   {
-    'label': 'GIANNETTI',
     'value': 1880,
-    'sublabel': 'Cagliari'
+    'ruolo': 'A',
+    'label': 'GIANNETTI <br> <span style=\'color:  grey\'>Cagliari</span>',
+    'squadra': 'Cagliari'
   },
   {
-    'label': 'OKWONKWO',
     'value': 2100,
-    'sublabel': 'Bologna'
+    'ruolo': 'A',
+    'label': 'OKWONKWO <br> <span style=\'color:  grey\'>Bologna</span>',
+    'squadra': 'Bologna'
   }
 ]

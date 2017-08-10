@@ -3,6 +3,11 @@
  */
 export const ATTACCANTI = [
   {
+    'label': '<b style="color: red">RIMUOVI</b>',
+    'value': -1,
+    'sublabel': '<b style="color: red">Rimuovi giocatore selezionato</b>'
+  },
+  {
     'label': 'HIGUAIN',
     'value': 408,
     'sublabel': 'Juventus'

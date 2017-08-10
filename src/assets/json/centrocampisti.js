@@ -3,6 +3,11 @@
  */
 export const CENTROCAMPISTI = [
   {
+    'label': '<b style="color: red">RIMUOVI</b>',
+    'value': -1,
+    'sublabel': '<b style="color: red">Rimuovi giocatore selezionato</b>'
+  },
+  {
     'label': 'HAMSIK',
     'value': 402,
     'sublabel': 'Napoli'
