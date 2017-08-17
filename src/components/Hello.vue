@@ -171,10 +171,6 @@
 </template>
 
 <script>
-  import { PORTIERI } from '../assets/json/portieri'
-  import { DIFENSORI } from '../assets/json/difensori'
-  import { CENTROCAMPISTI } from '../assets/json/centrocampisti'
-  import { ATTACCANTI } from '../assets/json/attaccanti'
   import { GIOCATORI } from '../assets/json/giocatori'
 
   import {
@@ -258,16 +254,16 @@
     created () {
       this.moduloSelezionato = '343'
       this.listaPortieri = this._.filter(GIOCATORI, function (o) {
-        return o.ruolo === 'P'
+        return o.ruolo === 'POR'
       })
       this.listaDifensori = this._.filter(GIOCATORI, function (o) {
-        return o.ruolo === 'D'
+        return o.ruolo === 'DIF'
       })
       this.listaCentrocampisti = this._.filter(GIOCATORI, function (o) {
-        return o.ruolo === 'C'
+        return o.ruolo === 'MED'
       })
       this.listaAttaccanti = this._.filter(GIOCATORI, function (o) {
-        return o.ruolo === 'A'
+        return o.ruolo === 'ATT'
       })
     },
     methods: {
