@@ -15,19 +15,24 @@ import Quasar from 'quasar'
 import router from './router'
 import lodash from 'lodash'
 import VueLodash from 'vue-lodash/dist/vue-lodash.min'
+import VueFire from 'vuefire'
+import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.use(Quasar) // Install Quasar Framework
+Vue.prototype.$http = axios
 
 if (__THEME === 'mat') {
   require('quasar-extras/roboto-font')
 }
 import 'quasar-extras/material-icons'
 // import 'quasar-extras/ionicons'
-// import 'quasar-extras/fontawesome'
+import 'quasar-extras/fontawesome'
 // import 'quasar-extras/animate'
 
 Vue.use(VueLodash, lodash)
+Vue.use(VueFire)
+Vue.use(require('vue-moment'))
 
 Quasar.start(() => {
   /* eslint-disable no-new */

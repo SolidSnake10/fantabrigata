@@ -47,6 +47,24 @@
       if using subRoutes
     -->
 
+    <q-collapsible icon="fa-futbol-o" :label="getLabelGiornata" style="background: #81C784" class="calendario-giornata">
+      <q-card style="background: white">
+        <q-card-main>
+          <table class="q-table highlight horizontal-separator striped-odd responsive" style="width: 100%">
+            <thead>
+            </thead>
+            <tbody>
+            <tr v-for="partita in calendarioGiornata">
+              <td class="text-left">{{ partita.home_team }}</td>
+              <td class="text-left">{{ partita.away_team }}</td>
+              <td class="text-left">{{ partita.date_match | moment("DD-MM-YYYY HH:mm")}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </q-card-main>
+      </q-card>
+    </q-collapsible>
+
     <q-tabs v-model="moduloSelezionato" color="green-6">
       <q-tab slot="title" :name="modulo" :label="modulo" v-for="modulo in listaModuli" :key="modulo"/>
     </q-tabs>
@@ -140,7 +158,8 @@
           </q-card-main>
         </q-card>
       </div>
-      <q-btn @click="generaFormazione" color="orange-6" style="width: 100%"> Genera Formazione </q-btn>
+      <q-btn @click="salvaFormazione" color="orange-6" style="width: 100%"> Salva Formazione </q-btn>
+      <q-btn @click="generaFormazione" color="orange-6" style="width: 100%; margin-top: 10px"> Genera Formazione </q-btn>
       <q-btn @click="confirmResetFormazione" color="red-6" style="width: 100%; margin-top: 10px"> Reset Formazione </q-btn>
     </div>
     <q-modal ref="overviewModal" :content-css="{minWidth: '80vw', minHeight: '95vh'}">
@@ -172,6 +191,7 @@
 
 <script>
   import { GIOCATORI } from '../assets/json/giocatori'
+  import { db } from '../firebaseConfig'
 
   import {
     QLayout,
@@ -195,8 +215,13 @@
     QCardSeparator,
     QModal,
     QModalLayout,
-    Dialog
+    Dialog,
+    QCollapsible
   } from 'quasar'
+
+  let formazioniRef = db.ref('formazioni')
+  let calendarioRef = db.ref('calendario')
+  let moment = require('moment')
 
   export default {
     name: 'index',
@@ -221,10 +246,15 @@
       QCardTitle,
       QCardSeparator,
       QModal,
-      QModalLayout
+      QModalLayout,
+      QCollapsible
     },
     data () {
       return {
+        infoGiornata: {},
+        calendarioGiornata: [],
+        formazioneSalvata: false,
+        giornataCorrente: {},
         formazione: {},
         titolari: [],
         panchina: [],
@@ -244,11 +274,22 @@
         listaGiocatori: GIOCATORI
       }
     },
+    firebase: {
+      formazioni: formazioniRef,
+      calciatori: db.ref('calciatori')
+    },
     computed: {
+      getLabelGiornata () {
+        return 'Giornata n. ' + this.infoGiornata.n_giornata + ' (' + moment(this.infoGiornata.start_date).format('DD-MM-YYYY, HH:mm:ss') + ')'
+      }
     },
     watch: {
       moduloSelezionato () {
         this.changeModulo()
+      },
+      formazioneSalvata () {
+        this.formazione = this.giornataCorrente.schieramento ? this.giornataCorrente.schieramento : {}
+        this.panchina = this.giornataCorrente.panchina ? this.giornataCorrente.panchina : []
       }
     },
     created () {
@@ -265,10 +306,50 @@
       this.listaAttaccanti = this._.filter(GIOCATORI, function (o) {
         return o.ruolo === 'ATT'
       })
+
+      let self = this
+      /* Cerco Giornata Corrente e Controllo Formazione Salvata */
+      let date = moment(new Date(), 'YYYY-MM-DD hh:mm:ss').format()
+      calendarioRef.orderByChild('start_date').startAt(date).limitToFirst(1).on('child_added', function (snapshot) {
+        self.infoGiornata = snapshot.val()
+        /* Cerco Calendario Gioranta Corrente */
+        self.$http.get('http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/17-18/rounds/round-' + self.infoGiornata.n_giornata)
+          .then(function (response) {
+            self.calendarioGiornata = response.data.data.rounds[0].matches
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+        formazioniRef.orderByChild('giornata').equalTo(self.infoGiornata.n_giornata).on('child_added', function (snapshot2) {
+          self.giornataCorrente = snapshot2.val()
+          self.giornataCorrente['key'] = snapshot2.key
+
+          self.moduloSelezionato = self.giornataCorrente.modulo
+          self.formazioneSalvata = true
+        })
+      })
     },
     methods: {
+      salvaFormazione () {
+        let formazione = {
+          giornata: this.infoGiornata.n_giornata,
+          modulo: this.moduloSelezionato,
+          schieramento: JSON.parse(JSON.stringify(this.formazione)),
+          panchina: this.panchina
+        }
+        if (this._.isEmpty(this.giornataCorrente)) {
+          formazioniRef.push(formazione).then(() => {
+            alert('Formazione Inserita Correttamente')
+          })
+        }
+        else {
+          db.ref('formazioni/' + this.giornataCorrente['key']).update(formazione).then(() => {
+            alert('Formazione Aggiornata Correttamente')
+          })
+        }
+      },
       changeModulo () {
-        console.log('changeModulo')
+        console.log('CAMBIO MODULO')
         this.resetSchieramento()
         this.resetFormazione()
 
@@ -314,7 +395,6 @@
         }
       },
       generaFormazione () {
-        console.log('generaFormazione')
         this.titolari = []
         this.listaSquadre = []
         for (var key in this.formazione) {
@@ -361,7 +441,6 @@
         return 'col-' + diff
       },
       resetSchieramento () {
-        console.log('resetSchieramento')
         this.schieramento = {
           difensori: [],
           centrocampisti: [],
@@ -401,7 +480,7 @@
           for (var i = 0; i < value.length; i++) {
             giocatore = this.findGiocatore(value[i])
             if (giocatore) {
-              listaPanchina += giocatore.label + ' ' + '<b>(' + giocatore.squadra + ')</b>, '
+              listaPanchina += giocatore.label.substring(0, giocatore.label.indexOf('<')) + ' ' + '<b>(' + giocatore.squadra + ')</b>, '
             }
           }
           if (listaPanchina.length > 0) {
@@ -413,7 +492,7 @@
           if (value) {
             giocatore = this.findGiocatore(value)
             if (giocatore) {
-              return giocatore.label.substring(0, giocatore.label.indexOf('<') - 1) + '<br> (' + giocatore.squadra + ')'
+              return giocatore.label.substring(0, giocatore.label.indexOf('<')) + '<br> (' + giocatore.squadra + ')'
             }
           }
         }
@@ -424,11 +503,10 @@
       getDescGiocatore (id) {
         if (id) {
           var giocatore = this.findGiocatore(id).label
-          return giocatore.substring(0, giocatore.indexOf('<') - 1)
+          return giocatore.substring(0, giocatore.indexOf('<'))
         }
       },
       refreshTables () {
-        console.log('REFRESH TABLES')
         // this.cleanDeselected()
         var listSquadreSelezionate = []
         for (var key in this.formazione) {
@@ -467,7 +545,6 @@
         // this.listaGiocatori = this._.union(this._.drop(this.listaPortieri), this._.drop(this.listaDifensori), this._.drop(this.listaAttaccanti))
       },
       cleanDeselected () {
-        console.log('cleanDeselected')
         for (var key in this.formazione) {
           if (this.formazione[key] && this.formazione[key] === -1) {
             this.formazione[key] = undefined
@@ -475,7 +552,6 @@
         }
       },
       eliminaUltimaRiserva () {
-        console.log('eliminaUltimaRiserva')
         this.panchina = this._.dropRight(this.panchina)
         this.refreshTables()
       }
@@ -486,5 +562,18 @@
 <style lang="stylus">
   .layout-page {
     background #4CAF50
+  }
+  .calendario-giornata {
+    padding 5px 0px
+  }
+
+  .calendario-giornata .q-item-label {
+    font-size 18px
+    font-weight 500
+    color white
+  }
+
+  .calendario-giornata .q-collapsible-sub-item {
+    padding 0px 0px 15px 0px!important
   }
 </style>
