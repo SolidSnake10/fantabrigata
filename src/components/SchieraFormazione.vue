@@ -266,7 +266,7 @@
       calendarioRef.orderByChild('start_date').startAt(date).limitToFirst(1).on('child_added', function (snapshot) {
         self.infoGiornata = snapshot.val()
         /* Cerco Calendario Gioranta Corrente */
-        self.$http.get('http://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/17-18/rounds/round-' + self.infoGiornata.n_giornata)
+        self.$http.get('https://soccer.sportsopendata.net/v1/leagues/serie-a/seasons/17-18/rounds/round-' + self.infoGiornata.n_giornata)
           .then(function (response) {
             self.calendarioGiornata = response.data.data.rounds[0].matches
           })
