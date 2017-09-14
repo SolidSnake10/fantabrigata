@@ -4,7 +4,7 @@
       <q-card-title>
         <q-select
           v-model="classificaSelezionata"
-          float-label="Giornata"
+          float-label="Scegli classifica"
           @change="cambiaClassifica"
           :options="[
             {
