@@ -5,7 +5,6 @@
         <q-select
           v-model="classificaSelezionata"
           float-label="Scegli classifica"
-          @change="cambiaClassifica"
           :options="[
             {
               label: 'Campionato',
@@ -31,7 +30,7 @@
           <tbody>
           <tr v-for="squadra in classificaCampionato">
             <td class="text-left">{{ squadra.posizione }}</td>
-            <td class="text-left">{{ squadra.squadra}}</td>
+            <td class="text-left" :style="getBold(squadra.squadra)">{{ squadra.squadra }}</td>
             <td class="text-left">{{ squadra.punteggio }}</td>
           </tr>
           </tbody>
@@ -49,7 +48,7 @@
           <tbody>
           <tr v-for="squadra in classificaCoppa">
             <td class="text-left">{{ squadra.posizione }}</td>
-            <td class="text-left">{{ squadra.squadra}}</td>
+            <td class="text-left" :style="getBold(squadra.squadra)">{{ squadra.squadra }}</td>
             <td class="text-left">{{ squadra.punteggio }}</td>
             <td class="text-left">{{ squadra.gf }}</td>
             <td class="text-left">{{ squadra.gs }}</td>
@@ -141,7 +140,12 @@
       })
     },
     methods: {
-      cambiaClassifica () {
+      getBold (squadra) {
+        if (squadra.toString().toLowerCase() === 'crotone') {
+          return {
+            fontWeight: 'bold'
+          }
+        }
       }
     }
   }
