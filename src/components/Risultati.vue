@@ -28,7 +28,7 @@
       </q-card-title>
       <q-card-separator />
       <q-card-main>
-        <table class="q-table highlight horizontal-separator striped-odd responsive" style="width: 100%" v-if="listaVotiPanchina.length > 0">
+        <table class="q-table highlight horizontal-separator striped-odd responsive" style="width: 100%">
           <thead>
           <tr>
             <th class="text-left">Nome</th>
@@ -41,26 +41,44 @@
           </tr>
           </thead>
           <tbody>
-          <tr v-for="giocatore in listaVotiTitolari">
-            <td class="text-left">{{ giocatore.Giocatore }}</td>
-            <td class="text-left">{{ giocatore.G.toString().substring(0,3) }}</td>
-            <td class="text-left">{{ giocatore.Amm }}</td>
-            <td class="text-left">{{ giocatore.Esp }}</td>
-            <td class="text-left">{{ giocatore.GF }}</td>
-            <td class="text-left">{{ giocatore.GS }}</td>
-            <td class="text-left">{{ giocatore.Aut }}</td>
+          <tr v-if="listaVotiTitolari['por-1']">
+            <td class="text-left">{{ listaVotiTitolari['por-1'].Giocatore }}</td>
+            <td class="text-left">{{ listaVotiTitolari['por-1'].G ? listaVotiTitolari['por-1'].G.toString().substring(0,3) : '' }}</td>
+            <td class="text-left">{{ listaVotiTitolari['por-1'].Amm }}</td>
+            <td class="text-left">{{ listaVotiTitolari['por-1'].Esp }}</td>
+            <td class="text-left">{{ listaVotiTitolari['por-1'].GF }}</td>
+            <td class="text-left">{{ listaVotiTitolari['por-1'].GS }}</td>
+            <td class="text-left">{{ listaVotiTitolari['por-1'].Aut }}</td>
+          </tr>
+          <tr v-for="n in nDif" v-if="listaVotiTitolari['dif-' + n]">
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].Giocatore }}</td>
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].G ? listaVotiTitolari['dif-' + n].G.toString().substring(0,3) : '' }}</td>
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].Amm }}</td>
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].Esp }}</td>
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].GF }}</td>
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].GS }}</td>
+            <td class="text-left">{{ listaVotiTitolari['dif-' + n].Aut }}</td>
+          </tr>
+          <tr v-for="n in getNCen" v-if="listaVotiTitolari['cen-' + n]">
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].Giocatore }}</td>
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].G ? listaVotiTitolari['cen-' + n].G.toString().substring(0,3) : '' }}</td>
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].Amm }}</td>
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].Esp }}</td>
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].GF }}</td>
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].GS }}</td>
+            <td class="text-left">{{ listaVotiTitolari['cen-' + n].Aut }}</td>
+          </tr>
+          <tr v-for="n in getNAtt" v-if="listaVotiTitolari['att-' + n]">
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].Giocatore }}</td>
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].G ? listaVotiTitolari['att-' + n].G.toString().substring(0,3) : '' }}</td>
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].Amm }}</td>
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].Esp }}</td>
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].GF }}</td>
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].GS }}</td>
+            <td class="text-left">{{ listaVotiTitolari['att-' + n].Aut }}</td>
           </tr>
           <tr style="background: #ff9800">
             <th class="text-center" colspan="7">Panchina</th>
-          </tr>
-          <tr v-for="giocatore in listaVotiPanchina">
-            <td class="text-left">{{ giocatore.Giocatore }}</td>
-            <td class="text-left">{{ giocatore.G.toString().substring(0,3) }}</td>
-            <td class="text-left">{{ giocatore.Amm }}</td>
-            <td class="text-left">{{ giocatore.Esp }}</td>
-            <td class="text-left">{{ giocatore.GF }}</td>
-            <td class="text-left">{{ giocatore.GS }}</td>
-            <td class="text-left">{{ giocatore.Aut }}</td>
           </tr>
           </tbody>
         </table>
@@ -100,6 +118,7 @@
   let formazioniRef = db.ref('formazioni')
   let votiRef = db.ref('voti')
   let calendarioRef = db.ref('calendario')
+  let giocatoriRef = db.ref('giocatori')
   let moment = require('moment')
 
   export default {
@@ -130,62 +149,119 @@
     },
     data () {
       return {
-        listaVotiTitolari: [],
+        listaVotiTitolari: {},
         listaVotiPanchina: [],
-        giornataSelezionata: '3'
+        giornataSelezionata: '3',
+        nDif: 0,
+        nCen: 0,
+        nAtt: 0
       }
     },
     firebase: {
     },
     computed: {
+      nDif: {
+        // getter
+        get: function () {
+          return this.nDif
+        },
+        // setter
+        set: function (newValue) {
+          this.nDif = newValue
+        }
+      },
+      getNCen () {
+        return this.nCen
+      },
+      getNAtt () {
+        return this.nAtt
+      }
     },
     watch: {
     },
-    created () {
+    beforeCreate () {
       let self = this
       let date = moment(new Date(), 'YYYY-MM-DD hh:mm:ss').format()
       calendarioRef.orderByChild('start_date').startAt(date).limitToFirst(1).on('child_added', function (snapshot) {
         self.giornataSelezionata = (snapshot.val().n_giornata - 1).toString()
         self.cambiaGiornata()
-        console.log(self.giornataSelezionata)
       })
     },
     methods: {
       cambiaGiornata () {
-        this.listaVotiTitolari = []
+        this.listaVotiTitolari = {}
         this.listaVotiPanchina = []
         this.getVotiByGiornata()
       },
-      async getVotiByGiornata (giornata) {
+      getGiocatore (snapshot, item) {
         let self = this
-        await formazioniRef.orderByChild('giornata').equalTo(this.giornataSelezionata).on('child_added', async function (snapshot) {
-          let modulo = snapshot.val().modulo
-          let dif = modulo.charAt(0)
-          let cen = modulo.charAt(1)
-          let att = modulo.charAt(2)
-          await votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().schieramento['por-1']).on('child_added', function (snapshot2) {
-            self.listaVotiTitolari.push(snapshot2.val())
+        giocatoriRef.orderByChild('value').equalTo(snapshot.val().schieramento[item]).on('child_added', function (snapshot3) {
+          self.$set(self.listaVotiTitolari, item, {
+            Giocatore: snapshot3.val().nome,
+            G: '-',
+            Amm: '-',
+            Esp: '-',
+            GF: '-',
+            GS: '-',
+            Aut: '-'
           })
-          for (let i = 0; i < dif; i++) {
-            await votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().schieramento['dif-' + (i + 1)]).on('child_added', function (snapshot2) {
-              self.listaVotiTitolari.push(snapshot2.val())
+        })
+      },
+      getVoto (snapshot, item) {
+        let self = this
+        votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().schieramento[item]).on('value', function (snapshot2) {
+          if (snapshot2.val()) {
+            snapshot2.forEach(function (child) {
+              self.$set(self.listaVotiTitolari, item, child.val())
             })
           }
-          for (let i = 0; i < cen; i++) {
-            await votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().schieramento['cen-' + (i + 1)]).on('child_added', function (snapshot2) {
-              self.listaVotiTitolari.push(snapshot2.val())
-            })
+          else {
+            self.getGiocatore(snapshot, item)
           }
-          for (let i = 0; i < att; i++) {
-            await votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().schieramento['att-' + (i + 1)]).on('child_added', function (snapshot2) {
-              self.listaVotiTitolari.push(snapshot2.val())
-            })
+        })
+      },
+      getVotiByGiornata (giornata) {
+        let self = this
+        formazioniRef.orderByChild('giornata').equalTo(this.giornataSelezionata).on('child_added', function (snapshot) {
+          let modulo = snapshot.val().modulo
+          self.nDif = Number(modulo.charAt(0))
+          self.nCen = Number(modulo.charAt(1))
+          self.nAtt = Number(modulo.charAt(2))
+
+          self.getVoto(snapshot, 'por-1')
+          for (let i = 0; i < self.nDif; i++) {
+            self.getVoto(snapshot, 'dif-' + (i + 1))
           }
+          for (let i = 0; i < self.nCen; i++) {
+            self.getVoto(snapshot, 'cen-' + (i + 1))
+          }
+          for (let i = 0; i < self.nAtt; i++) {
+            self.getVoto(snapshot, 'att-' + (i + 1))
+          }
+          /*
           for (let panchinaro in snapshot.val().panchina) {
-            await votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().panchina[panchinaro]).on('child_added', function (snapshot2) {
-              self.listaVotiPanchina.push(snapshot2.val())
+            votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().panchina[panchinaro]).on('value', function (snapshot2) {
+              if (snapshot2.val()) {
+                snapshot2.forEach(function (child) {
+                  self.listaVotiPanchina.push(child.val())
+                })
+              }
+              else {
+                giocatoriRef.orderByChild('value').equalTo(snapshot.val().panchina[panchinaro]).on('child_added', function (snapshot3) {
+                  self.listaVotiPanchina.push({
+                    Giocatore: snapshot3.val().nome,
+                    G: '-',
+                    Amm: '-',
+                    Esp: '-',
+                    GF: '-',
+                    GS: '-',
+                    Aut: '-'
+                  })
+                })
+              }
             })
           }
+          */
         })
       }
     }
