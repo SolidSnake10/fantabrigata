@@ -35,6 +35,10 @@
           <q-item-side icon="list" />
           <q-item-main label="Risultati"/>
         </q-item>
+        <q-item @click="componenteSelezionato = 'classifica'">
+          <q-item-side icon="list" />
+          <q-item-main label="Classifica"/>
+        </q-item>
       </q-list>
     </div>
 
@@ -52,6 +56,7 @@
 <script>
   import SchieraFormazione from './SchieraFormazione.vue'
   import Risultati from './Risultati.vue'
+  import Classifica from './Classifica.vue'
 
   import {
     QLayout,
@@ -104,7 +109,8 @@
       QModalLayout,
       QCollapsible,
       schieraFormazione: SchieraFormazione,
-      risultati: Risultati
+      risultati: Risultati,
+      classifica: Classifica
     },
     data () {
       return {

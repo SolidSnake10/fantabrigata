@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7f49ff-9abd-4fa0-8d92-584d6394f1e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/SchieraFormazione.vue" afterPath="$PROJECT_DIR$/src/components/SchieraFormazione.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Classifica.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Hello.vue" afterPath="$PROJECT_DIR$/src/components/Hello.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +25,10 @@
       <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Hello.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+            <state relative-caret-position="1659">
+              <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#1251#1306#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="Risultati.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Risultati.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3171">
+            <state relative-caret-position="3696">
               <caret line="176" column="14" lean-forward="false" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#q-card-main#0;n#q-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -612,7 +612,7 @@
       <file leaf-file-name="giocatori.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/json/giocatori.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="24801">
               <caret line="1181" column="16" lean-forward="false" selection-start-line="1181" selection-start-column="13" selection-end-line="1181" selection-end-column="16" />
               <folding>
                 <marker date="1505305333247" expanded="true" signature="133:145" ph="..." />
@@ -1299,7 +1299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1361,6 +1360,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1545,6 +1545,7 @@
       <workItem from="1505316090635" duration="1352000" />
       <workItem from="1505318488476" duration="1892000" />
       <workItem from="1505721058946" duration="1585000" />
+      <workItem from="1505722742126" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1502378101339</created>
@@ -1585,7 +1586,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99909000" />
+    <option name="totallyTimeSpent" value="99914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1600,14 +1601,14 @@
     <frame x="-8" y="-8" width="1936" height="1092" extended-state="0" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40565032" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4099147" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32708332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32708332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1651,7 +1652,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1698,7 +1698,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1744,7 +1743,6 @@
           <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1776,7 +1774,6 @@
           <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1801,7 +1798,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1826,7 +1822,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1844,7 +1839,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1855,7 +1849,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1873,7 +1866,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2488,11 +2480,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Hello.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+        <state relative-caret-position="1659">
+          <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#q-layout#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1251#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2507,7 +2498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Risultati.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3171">
+        <state relative-caret-position="3696">
           <caret line="176" column="14" lean-forward="false" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#table#0;n#q-card-main#0;n#q-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -2519,7 +2510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/json/giocatori.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="24801">
           <caret line="1181" column="16" lean-forward="false" selection-start-line="1181" selection-start-column="13" selection-end-line="1181" selection-end-column="16" />
           <folding>
             <marker date="1505305333247" expanded="true" signature="133:145" ph="..." />
