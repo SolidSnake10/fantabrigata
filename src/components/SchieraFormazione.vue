@@ -281,9 +281,11 @@
           self.formazioneSalvata = true
         })
       })
+      /*
       db.ref('voti/giornata-3').orderByChild('ID').equalTo(623).on('child_added', function (snapshot) {
         console.log(snapshot.val())
       })
+      */
     },
     methods: {
       salvaFormazione () {
@@ -353,15 +355,30 @@
       generaFormazione () {
         this.titolari = []
         this.listaSquadre = []
+        let nDif = this.moduloSelezionato.charAt(0)
+        let nCen = this.moduloSelezionato.charAt(1)
+        let nAtt = this.moduloSelezionato.charAt(2)
         for (var key in this.formazione) {
           if (!this.formazione[key]) {
             alert('Titolari mancanti')
             return
           }
-          else {
-            this.titolari.push(this.formazione[key])
-          }
         }
+
+        this.titolari.push(this.formazione['por-1'])
+        for (let n = 1; n <= nDif; n++) {
+          console.log(n)
+          this.titolari.push(this.formazione['dif-' + n])
+        }
+        for (let n = 1; n <= nCen; n++) {
+          console.log(n)
+          this.titolari.push(this.formazione['cen-' + n])
+        }
+        for (let n = 1; n <= nAtt; n++) {
+          console.log(n)
+          this.titolari.push(this.formazione['att-' + n])
+        }
+        console.log(this.titolari)
 
         this.formazioneCompleta = this._.concat(this.titolari, this.panchina)
         if (this.hasDuplicates(this.formazioneCompleta)) {
