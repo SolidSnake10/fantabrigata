@@ -80,6 +80,15 @@
           <tr style="background: #ff9800">
             <th class="text-center" colspan="7">Panchina</th>
           </tr>
+          <tr v-for="giocatore in listaVotiPanchina" v-if="listaVotiPanchina.length > 0">
+            <td class="text-left">{{ giocatore.Giocatore }}</td>
+            <td class="text-left">{{ giocatore.G ? giocatore.G.toString().substring(0,3) : '' }}</td>
+            <td class="text-left">{{ giocatore.Amm }}</td>
+            <td class="text-left">{{ giocatore.Esp }}</td>
+            <td class="text-left">{{ giocatore.GF }}</td>
+            <td class="text-left">{{ giocatore.GS }}</td>
+            <td class="text-left">{{ giocatore.Aut }}</td>
+          </tr>
           </tbody>
         </table>
       </q-card-main>
@@ -238,7 +247,6 @@
           for (let i = 0; i < self.nAtt; i++) {
             self.getVoto(snapshot, 'att-' + (i + 1))
           }
-          /*
           for (let panchinaro in snapshot.val().panchina) {
             votiRef.child('giornata-' + self.giornataSelezionata).orderByChild('ID').equalTo(snapshot.val().panchina[panchinaro]).on('value', function (snapshot2) {
               if (snapshot2.val()) {
@@ -261,7 +269,6 @@
               }
             })
           }
-          */
         })
       }
     }
