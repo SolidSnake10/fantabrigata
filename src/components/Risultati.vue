@@ -7,23 +7,47 @@
           float-label="Giornata"
           @change="cambiaGiornata"
           :options="[
-            {
-              label: 'Giornata 1',
-              value: '1'
-            },
-            {
-              label: 'Giornata 2',
-              value: '2'
-            },
-            {
-              label: 'Giornata 3',
-              value: '3'
-            },
-            {
-              label: 'Giornata 4',
-              value: '4'
-            }
-          ]"
+              {'value':1,'label':'Giornata 1'},
+              {'value':2,'label':'Giornata 2'},
+              {'value':3,'label':'Giornata 3'},
+              {'value':4,'label':'Giornata 4'},
+              {'value':5,'label':'Giornata 5'},
+              {'value':6,'label':'Giornata 6'},
+              {'value':7,'label':'Giornata 7'},
+              {'value':8,'label':'Giornata 8'},
+              {'value':9,'label':'Giornata 9'},
+              {'value':10,'label':'Giornata 10'},
+              {'value':11,'label':'Giornata 11'},
+              {'value':12,'label':'Giornata 12'},
+              {'value':13,'label':'Giornata 13'},
+              {'value':14,'label':'Giornata 14'},
+              {'value':15,'label':'Giornata 15'},
+              {'value':16,'label':'Giornata 16'},
+              {'value':17,'label':'Giornata 17'},
+              {'value':18,'label':'Giornata 18'},
+              {'value':19,'label':'Giornata 19'},
+              {'value':20,'label':'Giornata 20'},
+              {'value':21,'label':'Giornata 21'},
+              {'value':22,'label':'Giornata 22'},
+              {'value':23,'label':'Giornata 23'},
+              {'value':24,'label':'Giornata 24'},
+              {'value':25,'label':'Giornata 25'},
+              {'value':26,'label':'Giornata 26'},
+              {'value':27,'label':'Giornata 27'},
+              {'value':28,'label':'Giornata 28'},
+              {'value':29,'label':'Giornata 29'},
+              {'value':30,'label':'Giornata 30'},
+              {'value':31,'label':'Giornata 31'},
+              {'value':32,'label':'Giornata 32'},
+              {'value':33,'label':'Giornata 33'},
+              {'value':34,'label':'Giornata 34'},
+              {'value':35,'label':'Giornata 35'},
+              {'value':36,'label':'Giornata 36'},
+              {'value':37,'label':'Giornata 37'},
+              {'value':38,'label':'Giornata 38'},
+              {'value':39,'label':'Giornata 39'},
+              {'value':40,'label':'Giornata 40'}
+            ]"
         />
       </q-card-title>
       <q-card-separator />
