@@ -2583,7 +2583,7 @@ export const GIOCATORI = [
     'label': 'NAGATOMO<br> <span style=\'color:  grey\'>INTER</span>',
     'nome': 'NAGATOMO',
     'squadra': 'INTER',
-    'ruolo': 'MED'
+    'ruolo': 'DIF'
   },
   {
     'value': 601,
@@ -2604,35 +2604,35 @@ export const GIOCATORI = [
     'label': 'NALINI<br> <span style=\'color:  grey\'>CROTONE</span>',
     'nome': 'NALINI',
     'squadra': 'CROTONE',
-    'ruolo': 'ATT'
+    'ruolo': 'MED'
   },
   {
     'value': 931,
     'label': 'NANI<br> <span style=\'color:  grey\'>LAZIO</span>',
     'nome': 'NANI',
     'squadra': 'LAZIO',
-    'ruolo': 'MED'
+    'ruolo': 'ATT'
   },
   {
     'value': 718,
     'label': 'NETO<br> <span style=\'color:  grey\'>LAZIO</span>',
     'nome': 'NETO',
     'squadra': 'LAZIO',
-    'ruolo': 'ATT'
+    'ruolo': 'MED'
   },
   {
     'value': 887,
     'label': 'NIANG<br> <span style=\'color:  grey\'>TORINO</span>',
     'nome': 'NIANG',
     'squadra': 'TORINO',
-    'ruolo': 'POR'
+    'ruolo': 'ATT'
   },
   {
     'value': 130,
     'label': 'NICOLAS<br> <span style=\'color:  grey\'>VERONA</span>',
     'nome': 'NICOLAS',
     'squadra': 'VERONA',
-    'ruolo': 'DIF'
+    'ruolo': 'POR'
   },
   {
     'value': 343,
